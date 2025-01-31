@@ -25,6 +25,9 @@ export default function Home() {
                   <button className="w-[15vw] h-10 rounded-xl backdrop-blur-sm bg-orange-600 px-4" type="button">Search</button>
                 </article>
               </section>
+              <section id="cards">
+                
+              </section>
           </main>
           <footer>
 

@@ -9,7 +9,7 @@ export default function Home() {
   const [sortBy, setSortBy] = useState("relevancy");
 
   
-  const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const [isInitialLoad, setIsInitialLoad] = useState(false);
 
   
   const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   const handleSearchClick = () => {
-    setIsInitialLoad(false); 
+    setIsInitialLoad(prev => !prev); 
   };
 
   return (
@@ -82,6 +82,7 @@ export default function Home() {
             language={language}
             sortBy={sortBy}
             isInitialLoad={isInitialLoad} 
+            
           />
         </section>
       </main>

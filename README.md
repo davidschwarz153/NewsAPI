@@ -16,7 +16,7 @@ NewsAPP ist eine einfache und benutzerfreundliche Anwendung, mit der du die neue
 
 ## Technologie-Stack
 
-- **Frontend:** React, TypeScript
+- **Frontend:** React, TypeScript, Next.js
 - **Backend:** [NewsAPI](https://newsapi.org/) (Verwendung der API für das Abrufen von Nachrichten)
 - **Styling:** Tailwind CSS
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import NewsPage from "./newscards"
 
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
                 </article>
               </section>
               <section id="cards">
-                
+                <NewsPage></NewsPage>
               </section>
           </main>
           <footer>

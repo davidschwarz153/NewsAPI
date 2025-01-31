@@ -63,7 +63,7 @@ const NewsPage = ({ searchQuery, language, sortBy, isInitialLoad }: NewsPageProp
     fetchNews();
   }, [isInitialLoad]); 
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="mt-10">Search to view the Latest News</div>;
   if (error) return <div>{error}</div>;
 
   return (

@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# NewsAPP
 
-First, run the development server:
+NewsAPP ist eine einfache und benutzerfreundliche Anwendung, mit der du die neuesten Nachrichten weltweit abrufen kannst. Die App ermöglicht es den Nutzern, nach Nachrichten zu suchen, die nach Relevanz, Veröffentlichung und Popularität gefiltert werden können. Die App verwendet die [NewsAPI](https://newsapi.org/) für das Abrufen von Nachrichten.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Nachrichten suchen:** Du kannst nach Artikeln suchen, indem du ein Schlüsselwort eingibst.
+- **Sprache auswählen:** Du kannst die Anzeigesprache der Nachrichten auf Deutsch, Englisch oder Spanisch einstellen.
+- **Sortierung der Ergebnisse:** Du kannst die Nachrichten nach Relevanz, Neuigkeit oder Popularität sortieren.
+- **Responsive Design:** Die App funktioniert auf mobilen Geräten und Desktops.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![NewsAPP Screenshot](./screenshot.png)
 
-## Learn More
+## Technologie-Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** React, TypeScript
+- **Backend:** [NewsAPI](https://newsapi.org/) (Verwendung der API für das Abrufen von Nachrichten)
+- **Styling:** Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Klone das Repository auf deinen lokalen Rechner:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/davidschwarz153/NewsAPP.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigiere in das Projektverzeichnis:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   cd NewsAPP
+   ```
+
+3. Installiere die benötigten Abhängigkeiten:
+
+   ```bash
+   npm install
+   ```
+
+4. Erstelle eine `.env`-Datei im Stammverzeichnis des Projekts und füge deinen NewsAPI API-Schlüssel hinzu:
+
+   ```env
+   NEXT_PUBLIC_API_TOKEN=dein-api-schluessel
+   ```
+
+   (Ersetze `dein-api-schluessel` durch deinen tatsächlichen API-Schlüssel von [NewsAPI](https://newsapi.org/)).
+
+5. Starte den Entwicklungsserver:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Öffne deinen Browser und gehe zu `http://localhost:3000`, um die Anwendung zu testen.
+
+## Funktionen
+
+- **Suchanfragen:** Du kannst nach Nachrichten mit einem bestimmten Schlüsselwort suchen.
+- **Sprache und Sortierung:** Du kannst die Anzeigesprache der Nachrichten sowie die Sortierung (nach Relevanz, Neuigkeit oder Popularität) ändern.
+- **Responsive Design:** Das Design ist für alle Bildschirmgrößen optimiert und funktioniert auf mobilen Geräten und Desktops gleichermaßen.
+
+## Contributing
+
+Beiträge sind willkommen! Wenn du Ideen zur Verbesserung hast oder Fehler findest, öffne bitte ein [Issue](https://github.com/davidschwarz153/NewsAPP/issues) oder sende einen [Pull Request](https://github.com/davidschwarz153/NewsAPP/pulls).
+
